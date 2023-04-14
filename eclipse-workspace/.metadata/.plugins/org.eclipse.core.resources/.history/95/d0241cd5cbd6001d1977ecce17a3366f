@@ -1,0 +1,7 @@
+<html>
+<title><head>Student Confirmed title</head></title>
+<body>
+	
+	The Student is confired:$(param.firstName) $(param.LastName)
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+<head><title>Student Confirmed Title</title></head>
+<body>
+
+The Student Details Is Confirmed: ${param.firstName} ${param.lastName}
+<br/><br/>
+
+Favourite Programming Language:<br/>
+<ul>
+<%=
+	String[] langs=request.getParametervalues("favoriteLanguage")
+	
+	for(String templang:langs)
+	{
+		
+		out.println("<li>"templang"</li>");
+	}
+%>
+</ul>
+</body>
+</html>

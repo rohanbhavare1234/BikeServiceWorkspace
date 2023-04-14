@@ -1,0 +1,7 @@
+<%@ page import="jspdemo.jsp*" %>
+<html>
+<body>
+
+Let's have some fun: <%=Funutils.makeItLower("FUN FUN FUN") %>
+</body>
+</html>

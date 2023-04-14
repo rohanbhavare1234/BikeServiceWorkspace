@@ -1,0 +1,20 @@
+<html>
+<head><title>Confirmation</title></head>
+
+<%
+	String favLang=request.getParameter("favLanguage");
+
+	cookie thecookie=new cookie("myApp.favouriteLanguage",favLang);
+	
+	thecookie.setMaxAge(60*60*24*365);
+	
+	response.addcookie(thecookie);
+%>
+<body>
+	Thanks! we set your favourite language to : $(param.favoutiteLanguage);
+	
+	<br/><br/>
+	
+	<a href="cookies-homepage.jsp">Return to homepage</a>
+</body>
+</html>

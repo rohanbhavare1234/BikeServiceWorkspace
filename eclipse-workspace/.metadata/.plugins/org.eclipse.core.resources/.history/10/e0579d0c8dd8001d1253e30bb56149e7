@@ -1,0 +1,24 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
+<%@ page import="java.util.*,com.rohan.jsp.tag1demo.Student" %>
+
+<% 
+	List<Student>data new ArrayList<>();
+
+	data.add(new Student("rohan","nikhil",false));
+	data.add(new Student("piyush","roshan",false));
+	data.add(new Student("vishal","public ",false));
+	
+	pageContext.setAttribute("myStudent",data);
+
+%>
+<html>
+<body>
+	<c:forEach var="tempStudent" items="${myStudents}">
+	
+		${tempStudent.firstName},${tempStudent.lastName},${tempStudent.goldCustomer}
+		<br/>
+		
+		</c:forEach>
+</body>
+</html>

@@ -1,0 +1,7 @@
+<html>
+<head><title>Student Confirmed title</title></head>
+<body>
+	
+	The Student is confirmed: <%= request.getParameter("firstName") %> <%= request.getParameter("lastName") %>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+<body>
+
+<form action="StudentServlet"  method="GET">
+
+<input type="text" name="first Name" />
+<br/><br/>
+
+<input type="text" name="last name" />
+<br/><br/>
+
+<input type="submit" value="Submit" />
+
+
+</form>
+</body>
+</html>

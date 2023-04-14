@@ -1,0 +1,22 @@
+<html>
+<body>
+<h3>Training Portal</h3>
+
+<%
+	String favLang="java";
+
+	Cookie[] theCookie=request.getCookie();
+	
+	if(theCookie!=null)
+	{
+		for(Cookie tempCookie:Cookie)
+		{
+			if("myApp.favouriteLanguage".equals(tempCookie.getName()))
+			{
+				favLang=tempCookie.getvalue();
+			}
+		}
+	}
+%>
+</body>
+</html>

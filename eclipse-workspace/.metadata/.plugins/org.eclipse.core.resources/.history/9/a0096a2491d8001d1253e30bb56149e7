@@ -1,0 +1,47 @@
+<!-- <html>
+<head><title> Student Registration Form</title></head>
+<body>
+<form action="student-response.jsp">
+
+	First name: <input type="text" name="firstName"/>
+	
+	<br/><br/>
+	
+	Last name: <input type="text" name="lastName"/>
+	
+	<br/><br/>
+	
+	<input type="submit" value="Submit"/>
+	
+</form>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <h2>Login Page</h2><br>
+    <div class="login">
+    <form action="student-response.jsp">
+        <label><b>User Name
+        </b>
+        </label>
+        <input type="text" name="Uname" id="userName"/>
+        <br><br>
+        <label><b>Password
+        </b>
+        </label>
+        <input type="Password" name="Pass" id="Pass">
+        <br><br>
+        <input type="button" name="log" id="log" value="Log In Here">
+        <br><br>
+        <input type="checkbox" id="check">
+        <span>Remember me</span>
+    </form>
+</div>
+</body>
+</html>
